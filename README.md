@@ -36,6 +36,7 @@ Este es el desglose detallado del proyecto Laravel “agencia”, con todas sus 
 ------------------------------------------------------------
 ROOT DEL PROYECTO
 ------------------------------------------------------------
+<details> <summary><strong>📦 Ver estructura completa</strong></summary>
 /agencia
 ├── app
 │   ├── Console
