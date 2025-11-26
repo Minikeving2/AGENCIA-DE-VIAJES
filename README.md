@@ -38,40 +38,34 @@ ROOT DEL PROYECTO
 ------------------------------------------------------------
 ```
 agencia
-├── app                              # Lógica principal del backend (MVC + Providers)
-│   ├── Console                      # Comandos personalizados de Artisan
-│   │   └── Kernel.php               # Registra comandos y tareas programadas (cron)
-│   ├── Exceptions                   # Manejo centralizado de excepciones
-│   │   └── Handler.php              # Controla cómo se muestran y reportan errores
+├── app                
 │   ├── Http                         # Manejo de peticiones HTTP
 │   │   ├── Controllers              # Controladores del proyecto (lógica de negocio)
 │   │   ├── Middleware               # Filtros de seguridad y validación de peticiones
-│   │   │   ├── Authenticate.php                 # Verifica que el usuario esté autenticado
-│   │   │   ├── EncryptCookies.php               # Encripta cookies sensibles
-│   │   │   ├── PreventRequestsDuringMaintenance.php # Bloquea acceso si la app está en mantenimiento
-│   │   │   ├── RedirectIfAuthenticated.php      # Evita que usuarios logueados accedan a zonas públicas
-│   │   │   └── TrimStrings.php                  # Limpia espacios innecesarios en entradas
-│   │   ├── Kernel.php                # Registra middleware globales y de rutas
-│   │   └── Requests                  # FormRequests para validar datos
+│   │   │   ├── Authenticate.php                 
+│   │   │   ├── EncryptCookies.php               
+│   │   │   ├── PreventRequestsDuringMaintenance.php 
+│   │   │   ├── RedirectIfAuthenticated.php     
+│   │   │   └── TrimStrings.php 
 │   ├── Models                        # Modelos Eloquent (representan tablas)
 │   └── Providers                     # Servicios principales de Laravel
-│       ├── AppServiceProvider.php           # Configuración general de la app
-│       ├── AuthServiceProvider.php          # Configura políticas de autorización
-│       ├── EventServiceProvider.php         # Registra listeners y eventos
-│       └── RouteServiceProvider.php         # Carga rutas y configuración de rutas
+│       ├── AppServiceProvider.php           
+│       ├── AuthServiceProvider.php          
+│       ├── EventServiceProvider.php         
+│       └── RouteServiceProvider.php         
 │
 ├── bootstrap                        # Inicializa la aplicación Laravel
 │   └── app.php                      # Crea la instancia principal de Laravel
 │
 ├── config                           # Archivos de configuración global
-│   ├── app.php                      # Configuración base: timezone, providers, nombre app
+│   ├── app.php                      
 │   ├── auth.php                     # Configuración de autenticación
-│   ├── broadcasting.php             # Configuración de WebSockets / broadcasting
+│   ├── broadcasting.php             
 │   ├── cache.php                    # Configuración de caché
-│   ├── filesystems.php              # Disco local, público, S3, etc.
-│   ├── logging.php                  # Configuración de logs
-│   ├── mail.php                     # SMTP y servicios de correo
-│   ├── queue.php                    # Configuración de colas
+│   ├── filesystems.php              
+│   ├── logging.php                
+│   ├── mail.php                    
+│   ├── queue.php                    
 │   ├── sanctum.php                  # Configuración para tokens de API
 │   ├── services.php                 # API keys y servicios externos
 │   ├── session.php                  # Configuración de sesiones
@@ -93,23 +87,13 @@ agencia
 │   │   └── layouts                  # Layouts base para las páginas
 │   │       └── app.blade.php
 │   ├── components                   # Componentes Blade reutilizables
-│   └── lang                         # Traducciones del proyecto
-│       ├── en                       # Archivos en inglés
-│       └── es                       # Archivos en español
 │
 ├── routes                           # Archivo de rutas del proyecto
 │   ├── web.php                      # Rutas web (vistas y controladores)
 │   ├── api.php                      # Rutas API (JSON)
 │   ├── channels.php                 # Canales para broadcasting
 │   └── console.php                  # Comandos Artisan basados en rutas
-│
-└── storage                          # Logs, sesiones, caché, archivos subidos
-    ├── app
-    ├── framework
-    │   ├── cache
-    │   ├── sessions
-    │   └── views
-    └── logs                         # Archivos de registro del sistema
+│                     
 ```
 
 ------------------------------------------------------------
