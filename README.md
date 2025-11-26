@@ -37,6 +37,7 @@ Este es el desglose detallado del proyecto Laravel “agencia”, con todas sus 
 ROOT DEL PROYECTO
 ------------------------------------------------------------
 <details> <summary><strong>📦 Ver estructura completa</strong></summary>
+    
 /agencia
 ├── app
 │   ├── Console
@@ -52,72 +53,65 @@ ROOT DEL PROYECTO
 │   │   │   ├── PreventRequestsDuringMaintenance.php
 │   │   │   ├── RedirectIfAuthenticated.php
 │   │   │   └── TrimStrings.php
-│   │   ├── Kernel.php
-│   │   └── Requests
-│   ├── Models
-│   │   └── (Modelos del proyecto)
-│   └── Providers
-│       ├── AppServiceProvider.php
-│       ├── AuthServiceProvider.php
-│       ├── EventServiceProvider.php
-│       └── RouteServiceProvider.php
-│
+│   │   └── Kernel.php
+│   ├── Providers
+│   │   ├── AppServiceProvider.php
+│   │   ├── AuthServiceProvider.php
+│   │   ├── EventServiceProvider.php
+│   │   └── RouteServiceProvider.php
+├── bootstrap
+│   └── app.php
 ├── config
-│   ├── app.php
-│   ├── auth.php
-│   ├── broadcasting.php
-│   ├── cache.php
-│   ├── database.php
-│   ├── filesystems.php
-│   ├── logging.php
-│   ├── mail.php
-│   ├── queue.php
-│   ├── sanctum.php
-│   ├── services.php
-│   ├── session.php
-│   └── view.php
-│
+│   └── (archivos de configuración)
+├── database
+│   ├── factories
+│   ├── migrations
+│   └── seeders
 ├── public
 │   ├── index.php
-│   ├── css
-│   ├── js
-│   ├── storage
-│   └── favicon.ico
-│
+│   ├── favicon.ico
+│   └── assets
 ├── resources
 │   ├── css
-│   │   └── app.css
 │   ├── js
-│   │   └── app.js
 │   ├── views
 │   │   ├── welcome.blade.php
-│   │   ├── layouts
-│   │   │   └── app.blade.php
-│   │   └── components
-│   │       └── (componentes blade)
-│   └── lang
-│       ├── en
-│       │   └── auth.php
-│       └── es
-│           └── (traducciones si existen)
-│
+│   │   └── layouts
+│   │       └── app.blade.php
+│   ├── components (Blade)
+│   ├── lang
+│   │   ├── en
+│   │   └── es
+│   └── routes
+│       ├── web.php
+│       ├── api.php
+│       ├── channels.php
+│       └── console.php
 ├── routes
 │   ├── web.php
 │   ├── api.php
-│   ├── channels.php
 │   └── console.php
-│
+├── storage
+│   ├── app
+│   ├── framework
+│   │   ├── cache
+│   │   ├── sessions
+│   │   └── views
+│   └── logs
 ├── tests
 │   ├── Feature
 │   │   └── ExampleTest.php
 │   └── Unit
 │       └── ExampleTest.php
-│
-├── vendor
-│   └── (dependencias de Composer — no se editan)
-│
-└── node_modules
-    └── (dependencias de NPM — no se editan)
+├── vendor  (dependencias de Composer)
+├── node_modules (dependencias de NPM)
+├── composer.json
+├── composer.lock
+├── package.json
+├── package-lock.json
+├── vite.config.js
+├── tailwind.config.js
+└── README.md
 
 
 ------------------------------------------------------------
