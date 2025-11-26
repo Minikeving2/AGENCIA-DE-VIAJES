@@ -29,51 +29,6 @@ tests/             → Pruebas unitarias y funcionales
 vendor/            → Dependencias de Composer
 node_modules/      → Dependencias de NPM
 
-------------------------------------------------------------
-🔧 REQUERIMIENTOS
-------------------------------------------------------------
-- PHP >= 8.1
-- Composer
-- Node.js + NPM
-- MySQL o MariaDB
-- Extensiones PHP requeridas por Laravel
-
-------------------------------------------------------------
-🛠 INSTALACIÓN Y CONFIGURACIÓN
-------------------------------------------------------------
-1. Clonar el repositorio:
-   git clone https://github.com/tu-usuario/agencia.git
-   cd agencia
-
-2. Instalar dependencias:
-   composer install
-   npm install
-
-3. Crear archivo .env:
-   cp .env.example .env
-
-4. Configurar base de datos en .env:
-   DB_DATABASE=agencia
-   DB_USERNAME=root
-   DB_PASSWORD=tu_clave
-
-5. Generar key de la app:
-   php artisan key:generate
-
-6. Ejecutar migraciones:
-   php artisan migrate
-
-7. Compilar assets:
-   npm run dev
-
-8. Ejecutar servidor:
-   php artisan serve
-
-Proyecto disponible en:
-http://localhost:8000
-
-
-
 # 📁 ESTRUCTURA COMPLETA DEL PROYECTO (CON SUBCARPETAS)
 
 Este es el desglose detallado del proyecto Laravel “agencia”, con todas sus carpetas y subdirectorios más relevantes.
@@ -174,3 +129,49 @@ ROOT DEL PROYECTO
 │
 └── node_modules
 └── (dependencias de NPM — no se editan)
+
+------------------------------------------------------------
+🔧 REQUERIMIENTOS
+------------------------------------------------------------
+- PHP >= 8.1
+- Composer
+- Node.js + NPM
+- MySQL o MariaDB
+- Extensiones PHP requeridas por Laravel
+
+------------------------------------------------------------
+🛠 INSTALACIÓN Y CONFIGURACIÓN
+------------------------------------------------------------
+1. Clonar el repositorio:
+   git clone https://github.com/tu-usuario/agencia.git
+   cd agencia
+
+2. Instalar dependencias:
+   composer install
+   npm install
+
+3. Crear archivo .env:
+   cp .env.example .env
+
+4. Configurar base de datos en .env:
+   DB_DATABASE=agencia
+   DB_USERNAME=root
+   DB_PASSWORD=tu_clave
+
+5. Generar key de la app:
+   php artisan key:generate
+
+6. Ejecutar migraciones:
+   php artisan migrate
+
+7. Compilar assets:
+   npm run dev
+
+8. Ejecutar servidor:
+   php artisan serve
+
+Proyecto disponible en:
+http://localhost:8000
+
+
+
