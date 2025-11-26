@@ -38,70 +38,78 @@ ROOT DEL PROYECTO
 ------------------------------------------------------------
 ```
 agencia
-├── app
-│   ├── Console
-│   │   └── Kernel.php
-│   ├── Exceptions
-│   │   └── Handler.php
-│   ├── Http
-│   │   ├── Controllers
-│   │   ├── Middleware
-│   │   │   ├── Authenticate.php
-│   │   │   ├── EncryptCookies.php
-│   │   │   ├── PreventRequestsDuringMaintenance.php
-│   │   │   ├── RedirectIfAuthenticated.php
-│   │   │   └── TrimStrings.php
-│   │   ├── Kernel.php
-│   │   └── Requests
-│   ├── Models
-│   └── Providers
-│       ├── AppServiceProvider.php
-│       ├── AuthServiceProvider.php
-│       ├── EventServiceProvider.php
-│       └── RouteServiceProvider.php
+├── app                              # Lógica principal del backend (MVC + Providers)
+│   ├── Console                      # Comandos personalizados de Artisan
+│   │   └── Kernel.php               # Registra comandos y tareas programadas (cron)
+│   ├── Exceptions                   # Manejo centralizado de excepciones
+│   │   └── Handler.php              # Controla cómo se muestran y reportan errores
+│   ├── Http                         # Manejo de peticiones HTTP
+│   │   ├── Controllers              # Controladores del proyecto (lógica de negocio)
+│   │   ├── Middleware               # Filtros de seguridad y validación de peticiones
+│   │   │   ├── Authenticate.php                 # Verifica que el usuario esté autenticado
+│   │   │   ├── EncryptCookies.php               # Encripta cookies sensibles
+│   │   │   ├── PreventRequestsDuringMaintenance.php # Bloquea acceso si la app está en mantenimiento
+│   │   │   ├── RedirectIfAuthenticated.php      # Evita que usuarios logueados accedan a zonas públicas
+│   │   │   └── TrimStrings.php                  # Limpia espacios innecesarios en entradas
+│   │   ├── Kernel.php                # Registra middleware globales y de rutas
+│   │   └── Requests                  # FormRequests para validar datos
+│   ├── Models                        # Modelos Eloquent (representan tablas)
+│   └── Providers                     # Servicios principales de Laravel
+│       ├── AppServiceProvider.php           # Configuración general de la app
+│       ├── AuthServiceProvider.php          # Configura políticas de autorización
+│       ├── EventServiceProvider.php         # Registra listeners y eventos
+│       └── RouteServiceProvider.php         # Carga rutas y configuración de rutas
 │
-├── bootstrap
-│   └── app.php
+├── bootstrap                        # Inicializa la aplicación Laravel
+│   └── app.php                      # Crea la instancia principal de Laravel
 │
-├── config
-│   ├── app.php
-│   ├── auth.php
-│   ├── broadcasting.php
-│   ├── cache.php
-│   ├── filesystems.php
-│   ├── logging.php
-│   ├── mail.php
-│   ├── queue.php
-│   ├── sanctum.php
-│   ├── services.php
-│   ├── session.php
-│   └── view.php
+├── config                           # Archivos de configuración global
+│   ├── app.php                      # Configuración base: timezone, providers, nombre app
+│   ├── auth.php                     # Configuración de autenticación
+│   ├── broadcasting.php             # Configuración de WebSockets / broadcasting
+│   ├── cache.php                    # Configuración de caché
+│   ├── filesystems.php              # Disco local, público, S3, etc.
+│   ├── logging.php                  # Configuración de logs
+│   ├── mail.php                     # SMTP y servicios de correo
+│   ├── queue.php                    # Configuración de colas
+│   ├── sanctum.php                  # Configuración para tokens de API
+│   ├── services.php                 # API keys y servicios externos
+│   ├── session.php                  # Configuración de sesiones
+│   └── view.php                     # Configuración de vistas Blade
 │
-├── public
-│   ├── index.php
-│   ├── favicon.ico
-│   ├── css (si existe)
-│   └── js  (si existe)
+├── public                           # Carpeta pública (se sirve por Apache/Nginx)
+│   ├── index.php                    # Punto de entrada de Laravel
+│   ├── favicon.ico                  # Icono del proyecto
+│   ├── css                          # Archivos CSS compilados
+│   └── js                           # Archivos JS compilados
 │
-├── resources
-│   ├── css
+├── resources                        # Archivos fuente (no compilados)
+│   ├── css                          # CSS/Tailwind original
 │   │   └── app.css
-│   ├── js
+│   ├── js                           # Código JS modificado por Vite
 │   │   └── app.js
-│   ├── views
-│   │   ├── welcome.blade.php
-│   │   └── layouts
+│   ├── views                        # Plantillas Blade (frontend)
+│   │   ├── welcome.blade.php        # Vista principal por defecto
+│   │   └── layouts                  # Layouts base para las páginas
 │   │       └── app.blade.php
-│   ├── components
-│   └── lang
-│       ├── en
-│       └── es
+│   ├── components                   # Componentes Blade reutilizables
+│   └── lang                         # Traducciones del proyecto
+│       ├── en                       # Archivos en inglés
+│       └── es                       # Archivos en español
 │
-├── routes
-│   ├── web.php
-│   ├── api.php
-│   ├── channels.php
-│   └── console.php
+├── routes                           # Archivo de rutas del proyecto
+│   ├── web.php                      # Rutas web (vistas y controladores)
+│   ├── api.php                      # Rutas API (JSON)
+│   ├── channels.php                 # Canales para broadcasting
+│   └── console.php                  # Comandos Artisan basados en rutas
+│
+└── storage                          # Logs, sesiones, caché, archivos subidos
+    ├── app
+    ├── framework
+    │   ├── cache
+    │   ├── sessions
+    │   └── views
+    └── logs                         # Archivos de registro del sistema
 ```
 
 ------------------------------------------------------------
