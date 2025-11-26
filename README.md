@@ -37,70 +37,10 @@ Este es el desglose detallado del proyecto Laravel “agencia”, con todas sus 
 ROOT DEL PROYECTO
 ------------------------------------------------------------
 <details> <summary><strong>📦 Ver estructura completa</strong></summary>
-/agencia
-├── app
-│   ├── Console
-│   │   └── Kernel.php
-│   ├── Exceptions
-│   │   └── Handler.php
-│   ├── Http
-│   │   ├── Controllers
-│   │   │   └── (Controladores del proyecto)
-│   │   ├── Middleware
-│   │   │   ├── Authenticate.php
-│   │   │   ├── EncryptCookies.php
-│   │   │   ├── PreventRequestsDuringMaintenance.php
-│   │   │   ├── RedirectIfAuthenticated.php
-│   │   │   └── TrimStrings.php
-│   │   └── Kernel.php
-│   ├── Models
-│   └── Providers
-│       ├── AppServiceProvider.php
-│       ├── AuthServiceProvider.php
-│       ├── EventServiceProvider.php
-│       └── RouteServiceProvider.php
-│
-├── bootstrap
-│   └── app.php
-│
-├── config
-│   └── (archivos de configuración)
-│
-├── public
-│   ├── index.php
-│   ├── favicon.ico
-│   └── assets
-│
-├── resources
-│   ├── css
-│   │   └── app.css
-│   ├── js
-│   │   └── app.js
-│   ├── views
-│   │   ├── welcome.blade.php
-│   │   └── layouts
-│   │       └── app.blade.php
-│   ├── components (Blade)
-│   ├── lang
-│   │   ├── es
-│   │   └── en
-│   └── routes
-│       ├── web.php
-│       ├── api.php
-│       ├── channels.php
-│       └── console.php
-│
-├── routes
-│   ├── web.php
-│   ├── api.php
-│   └── console.php
-│
-├── composer.json
-├── composer.lock
-├── package.json
-├── package-lock.json
-└── README.md
-
+.
+├── carpeta
+│   └── archivo
+└── carpeta2
 </details>
 
 ------------------------------------------------------------
