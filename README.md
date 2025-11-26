@@ -102,28 +102,6 @@ agencia
 │   ├── api.php
 │   ├── channels.php
 │   └── console.php
-│
-├── storage
-│   ├── app
-│   ├── framework
-│   │   ├── cache
-│   │   ├── sessions
-│   │   └── views
-│   └── logs
-│
-├── tests
-│   ├── Feature
-│   │   └── ExampleTest.php
-│   └── Unit
-│       └── ExampleTest.php
-│
-├── composer.json
-├── composer.lock
-├── package.json
-├── package-lock.json
-├── vite.config.js
-├── tailwind.config.js
-└── README.md
 ```
 
 ------------------------------------------------------------
