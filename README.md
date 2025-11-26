@@ -71,3 +71,134 @@ node_modules/      → Dependencias de NPM
 
 Proyecto disponible en:
 http://localhost:8000
+
+
+
+# 📁 ESTRUCTURA COMPLETA DEL PROYECTO (CON SUBCARPETAS)
+
+Este es el desglose detallado del proyecto Laravel “agencia”, con todas sus carpetas y subdirectorios más relevantes.
+
+------------------------------------------------------------
+ROOT DEL PROYECTO
+------------------------------------------------------------
+/agencia
+│
+├── .editorconfig
+├── .gitattributes
+├── .gitignore
+├── composer.json
+├── composer.lock
+├── package.json
+├── package-lock.json
+├── phpunit.xml
+├── postcss.config.js
+├── tailwind.config.js
+├── vite.config.js
+│
+├── app/
+│   ├── Console/
+│   │     └── Kernel.php
+│   ├── Exceptions/
+│   │     └── Handler.php
+│   ├── Http/
+│   │     ├── Controllers/
+│   │     │     └── (Controladores del proyecto)
+│   │     ├── Middleware/
+│   │     │     ├── Authenticate.php
+│   │     │     ├── EncryptCookies.php
+│   │     │     ├── PreventRequestsDuringMaintenance.php
+│   │     │     ├── RedirectIfAuthenticated.php
+│   │     │     └── TrimStrings.php
+│   │     ├── Kernel.php
+│   │     └── Requests/
+│   ├── Models/
+│   │     └── (Modelos del proyecto)
+│   └── Providers/
+│         ├── AppServiceProvider.php
+│         ├── AuthServiceProvider.php
+│         ├── EventServiceProvider.php
+│         └── RouteServiceProvider.php
+│
+├── bootstrap/
+│   ├── app.php
+│   └── cache/
+│         └── (archivos generados automáticamente)
+│
+├── config/
+│   ├── app.php
+│   ├── auth.php
+│   ├── broadcasting.php
+│   ├── cache.php
+│   ├── database.php
+│   ├── filesystems.php
+│   ├── logging.php
+│   ├── mail.php
+│   ├── queue.php
+│   ├── sanctum.php
+│   ├── services.php
+│   ├── session.php
+│   └── view.php
+│
+├── database/
+│   ├── factories/
+│   │     └── (Factories)
+│   ├── migrations/
+│   │     ├── 2023_xx_xx_create_users_table.php
+│   │     ├── 2023_xx_xx_create_password_reset_tokens_table.php
+│   │     └── (Más migraciones)
+│   └── seeders/
+│         ├── DatabaseSeeder.php
+│         └── (Seeders adicionales)
+│
+├── public/
+│   ├── index.php
+│   ├── css/
+│   ├── js/
+│   ├── storage/
+│   └── favicon.ico
+│
+├── resources/
+│   ├── css/
+│   │     └── app.css
+│   ├── js/
+│   │     └── app.js
+│   ├── views/
+│   │     ├── welcome.blade.php
+│   │     ├── layouts/
+│   │     │     └── app.blade.php
+│   │     └── components/
+│   │           └── (componentes blade)
+│   └── lang/
+│         ├── en/
+│         │     └── auth.php
+│         └── es/
+│               └── (traducciones si existen)
+│
+├── routes/
+│   ├── web.php
+│   ├── api.php
+│   ├── channels.php
+│   └── console.php
+│
+├── storage/
+│   ├── app/
+│   │     └── (archivos locales)
+│   ├── framework/
+│   │     ├── cache/
+│   │     ├── views/
+│   │     ├── sessions/
+│   │     └── testing/
+│   └── logs/
+│         └── laravel.log
+│
+├── tests/
+│   ├── Feature/
+│   │     └── ExampleTest.php
+│   └── Unit/
+│         └── ExampleTest.php
+│
+├── vendor/
+│     └── (dependencias de Composer — no se editan)
+│
+└── node_modules/
+      └── (dependencias de NPM — no se editan)
