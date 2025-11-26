@@ -37,7 +37,6 @@ Este es el desglose detallado del proyecto Laravel “agencia”, con todas sus 
 ROOT DEL PROYECTO
 ------------------------------------------------------------
 <details> <summary><strong>📦 Ver estructura completa</strong></summary>
-    
 /agencia
 ├── app
 │   ├── Console
@@ -54,65 +53,55 @@ ROOT DEL PROYECTO
 │   │   │   ├── RedirectIfAuthenticated.php
 │   │   │   └── TrimStrings.php
 │   │   └── Kernel.php
-│   ├── Providers
-│   │   ├── AppServiceProvider.php
-│   │   ├── AuthServiceProvider.php
-│   │   ├── EventServiceProvider.php
-│   │   └── RouteServiceProvider.php
+│   ├── Models
+│   └── Providers
+│       ├── AppServiceProvider.php
+│       ├── AuthServiceProvider.php
+│       ├── EventServiceProvider.php
+│       └── RouteServiceProvider.php
+│
 ├── bootstrap
 │   └── app.php
+│
 ├── config
 │   └── (archivos de configuración)
-├── database
-│   ├── factories
-│   ├── migrations
-│   └── seeders
+│
 ├── public
 │   ├── index.php
 │   ├── favicon.ico
 │   └── assets
+│
 ├── resources
 │   ├── css
+│   │   └── app.css
 │   ├── js
+│   │   └── app.js
 │   ├── views
 │   │   ├── welcome.blade.php
 │   │   └── layouts
 │   │       └── app.blade.php
 │   ├── components (Blade)
 │   ├── lang
-│   │   ├── en
-│   │   └── es
+│   │   ├── es
+│   │   └── en
 │   └── routes
 │       ├── web.php
 │       ├── api.php
 │       ├── channels.php
 │       └── console.php
+│
 ├── routes
 │   ├── web.php
 │   ├── api.php
 │   └── console.php
-├── storage
-│   ├── app
-│   ├── framework
-│   │   ├── cache
-│   │   ├── sessions
-│   │   └── views
-│   └── logs
-├── tests
-│   ├── Feature
-│   │   └── ExampleTest.php
-│   └── Unit
-│       └── ExampleTest.php
-├── vendor  (dependencias de Composer)
-├── node_modules (dependencias de NPM)
+│
 ├── composer.json
 ├── composer.lock
 ├── package.json
 ├── package-lock.json
-├── vite.config.js
-├── tailwind.config.js
 └── README.md
 
+</details>
 
 ------------------------------------------------------------
 🔧 REQUERIMIENTOS
