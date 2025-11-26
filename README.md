@@ -81,77 +81,96 @@ Este es el desglose detallado del proyecto Laravel “agencia”, con todas sus 
 ------------------------------------------------------------
 ROOT DEL PROYECTO
 ------------------------------------------------------------
+
+
 /agencia
-├── app/
-│   ├── Console/
-│   │     └── Kernel.php
-│   ├── Exceptions/
-│   │     └── Handler.php
-│   ├── Http/
-│   │     ├── Controllers/
-│   │     │     └── (Controladores del proyecto)
-│   │     ├── Middleware/
-│   │     │     ├── Authenticate.php
-│   │     │     ├── EncryptCookies.php
-│   │     │     ├── PreventRequestsDuringMaintenance.php
-│   │     │     ├── RedirectIfAuthenticated.php
-│   │     │     └── TrimStrings.php
-│   │     ├── Kernel.php
-│   │     └── Requests/
-│   ├── Models/
-│   │     └── (Modelos del proyecto)
-│   └── Providers/
-│         ├── AppServiceProvider.php
-│         ├── AuthServiceProvider.php
-│         ├── EventServiceProvider.php
-│         └── RouteServiceProvider.php
-├── config/
-│   ├── app.php
-│   ├── auth.php
-│   ├── broadcasting.php
-│   ├── cache.php
-│   ├── database.php
-│   ├── filesystems.php
-│   ├── logging.php
-│   ├── mail.php
-│   ├── queue.php
-│   ├── sanctum.php
-│   ├── services.php
-│   ├── session.php
-│   └── view.php
-├── public/
-│   ├── index.php
-│   ├── css/
-│   ├── js/
-│   ├── storage/
-│   └── favicon.ico
+├── app
+│ ├── Console
+│ │ └── Kernel.php
+│ ├── Exceptions
+│ │ └── Handler.php
+│ ├── Http
+│ │ ├── Controllers
+│ │ │ └── (Controladores del proyecto)
+│ │ ├── Middleware
+│ │ │ ├── Authenticate.php
+│ │ │ ├── EncryptCookies.php
+│ │ │ ├── PreventRequestsDuringMaintenance.php
+│ │ │ ├── RedirectIfAuthenticated.php
+│ │ │ └── TrimStrings.php
+│ │ ├── Kernel.php
+│ │ └── Requests
+│ ├── Models
+│ │ └── (Modelos del proyecto)
+│ └── Providers
+│ ├── AppServiceProvider.php
+│ ├── AuthServiceProvider.php
+│ ├── EventServiceProvider.php
+│ └── RouteServiceProvider.php
 │
-├── resources/
-│   ├── css/
-│   │     └── app.css
-│   ├── js/
-│   │     └── app.js
-│   ├── views/
-│   │     ├── welcome.blade.php
-│   │     ├── layouts/
-│   │     │     └── app.blade.php
-│   │     └── components/
-│   │           └── (componentes blade)
-│   └── lang/
-│         ├── en/
-│         │     └── auth.php
-│         └── es/
-│               └── (traducciones si existen)
+├── config
+│ ├── app.php
+│ ├── auth.php
+│ ├── broadcasting.php
+│ ├── cache.php
+│ ├── database.php
+│ ├── filesystems.php
+│ ├── logging.php
+│ ├── mail.php
+│ ├── queue.php
+│ ├── sanctum.php
+│ ├── services.php
+│ ├── session.php
+│ └── view.php
 │
-├── routes/
-│   ├── web.php
-│   ├── api.php
-│   ├── channels.php
-│   └── console.php
-   └── ExampleTest.php
+├── public
+│ ├── index.php
+│ ├── css
+│ ├── js
+│ ├── storage
+│ └── favicon.ico
 │
-├── vendor/
-│     └── (dependencias de Composer — no se editan)
+├── resources
+│ ├── css
+│ │ └── app.css
+│ ├── js
+│ │ └── app.js
+│ ├── views
+│ │ ├── welcome.blade.php
+│ │ ├── layouts
+│ │ │ └── app.blade.php
+│ │ └── components
+│ │ └── (componentes blade)
+│ └── lang
+│ ├── en
+│ │ └── auth.php
+│ └── es
+│ └── (traducciones si existen)
 │
-└── node_modules/
-      └── (dependencias de NPM — no se editan)
+├── routes
+│ ├── web.php
+│ ├── api.php
+│ ├── channels.php
+│ └── console.php
+│
+├── storage
+│ ├── app
+│ ├── framework
+│ │ ├── cache
+│ │ ├── views
+│ │ ├── sessions
+│ │ └── testing
+│ └── logs
+│ └── laravel.log
+│
+├── tests
+│ ├── Feature
+│ │ └── ExampleTest.php
+│ └── Unit
+│ └── ExampleTest.php
+│
+├── vendor
+│ └── (dependencias de Composer — no se editan)
+│
+└── node_modules
+└── (dependencias de NPM — no se editan)
