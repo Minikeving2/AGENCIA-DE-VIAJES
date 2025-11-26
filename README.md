@@ -36,12 +36,95 @@ Este es el desglose detallado del proyecto Laravel “agencia”, con todas sus 
 ------------------------------------------------------------
 ROOT DEL PROYECTO
 ------------------------------------------------------------
-<details> <summary><strong>📦 Ver estructura completa</strong></summary>
-.
-├── carpeta
-│   └── archivo
-└── carpeta2
-</details>
+```
+agencia
+├── app
+│   ├── Console
+│   │   └── Kernel.php
+│   ├── Exceptions
+│   │   └── Handler.php
+│   ├── Http
+│   │   ├── Controllers
+│   │   ├── Middleware
+│   │   │   ├── Authenticate.php
+│   │   │   ├── EncryptCookies.php
+│   │   │   ├── PreventRequestsDuringMaintenance.php
+│   │   │   ├── RedirectIfAuthenticated.php
+│   │   │   └── TrimStrings.php
+│   │   ├── Kernel.php
+│   │   └── Requests
+│   ├── Models
+│   └── Providers
+│       ├── AppServiceProvider.php
+│       ├── AuthServiceProvider.php
+│       ├── EventServiceProvider.php
+│       └── RouteServiceProvider.php
+│
+├── bootstrap
+│   └── app.php
+│
+├── config
+│   ├── app.php
+│   ├── auth.php
+│   ├── broadcasting.php
+│   ├── cache.php
+│   ├── filesystems.php
+│   ├── logging.php
+│   ├── mail.php
+│   ├── queue.php
+│   ├── sanctum.php
+│   ├── services.php
+│   ├── session.php
+│   └── view.php
+│
+├── public
+│   ├── index.php
+│   ├── favicon.ico
+│   ├── css (si existe)
+│   └── js  (si existe)
+│
+├── resources
+│   ├── css
+│   │   └── app.css
+│   ├── js
+│   │   └── app.js
+│   ├── views
+│   │   ├── welcome.blade.php
+│   │   └── layouts
+│   │       └── app.blade.php
+│   ├── components
+│   └── lang
+│       ├── en
+│       └── es
+│
+├── routes
+│   ├── web.php
+│   ├── api.php
+│   ├── channels.php
+│   └── console.php
+│
+├── storage
+│   ├── app
+│   ├── framework
+│   │   ├── cache
+│   │   ├── sessions
+│   │   └── views
+│   └── logs
+│
+├── tests
+│   ├── Feature
+│   │   └── ExampleTest.php
+│   └── Unit
+│       └── ExampleTest.php
+│
+├── composer.json
+├── composer.lock
+├── package.json
+├── package-lock.json
+├── vite.config.js
+├── tailwind.config.js
+└── README.md
+```
 
 ------------------------------------------------------------
 🔧 REQUERIMIENTOS
