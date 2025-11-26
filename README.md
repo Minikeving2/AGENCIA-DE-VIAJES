@@ -82,19 +82,6 @@ Este es el desglose detallado del proyecto Laravel “agencia”, con todas sus 
 ROOT DEL PROYECTO
 ------------------------------------------------------------
 /agencia
-│
-├── .editorconfig
-├── .gitattributes
-├── .gitignore
-├── composer.json
-├── composer.lock
-├── package.json
-├── package-lock.json
-├── phpunit.xml
-├── postcss.config.js
-├── tailwind.config.js
-├── vite.config.js
-│
 ├── app/
 │   ├── Console/
 │   │     └── Kernel.php
@@ -118,12 +105,6 @@ ROOT DEL PROYECTO
 │         ├── AuthServiceProvider.php
 │         ├── EventServiceProvider.php
 │         └── RouteServiceProvider.php
-│
-├── bootstrap/
-│   ├── app.php
-│   └── cache/
-│         └── (archivos generados automáticamente)
-│
 ├── config/
 │   ├── app.php
 │   ├── auth.php
@@ -138,18 +119,6 @@ ROOT DEL PROYECTO
 │   ├── services.php
 │   ├── session.php
 │   └── view.php
-│
-├── database/
-│   ├── factories/
-│   │     └── (Factories)
-│   ├── migrations/
-│   │     ├── 2023_xx_xx_create_users_table.php
-│   │     ├── 2023_xx_xx_create_password_reset_tokens_table.php
-│   │     └── (Más migraciones)
-│   └── seeders/
-│         ├── DatabaseSeeder.php
-│         └── (Seeders adicionales)
-│
 ├── public/
 │   ├── index.php
 │   ├── css/
@@ -179,23 +148,7 @@ ROOT DEL PROYECTO
 │   ├── api.php
 │   ├── channels.php
 │   └── console.php
-│
-├── storage/
-│   ├── app/
-│   │     └── (archivos locales)
-│   ├── framework/
-│   │     ├── cache/
-│   │     ├── views/
-│   │     ├── sessions/
-│   │     └── testing/
-│   └── logs/
-│         └── laravel.log
-│
-├── tests/
-│   ├── Feature/
-│   │     └── ExampleTest.php
-│   └── Unit/
-│         └── ExampleTest.php
+   └── ExampleTest.php
 │
 ├── vendor/
 │     └── (dependencias de Composer — no se editan)
